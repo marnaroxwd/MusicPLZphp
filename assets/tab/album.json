@@ -1,0 +1,160 @@
+{
+  "albums": [
+    {
+      "album_title": "Lindsey Stirling",
+      "date": "18/09/2012",
+      "image": "assets/images/LSAlbum.webp",
+      "slug": "lindsey-stirling",
+      "tracklist": [
+        { "track_title": "Electric Daisy Violin", "artist": "Lindsey Stirling" },
+        { "track_title": "Zi-Zi's Journey", "artist": "Lindsey Stirling" },
+        { "track_title": "Crystallize", "artist": "Lindsey Stirling" },
+        { "track_title": "Song of the Caged Bird", "artist": "Lindsey Stirling" },
+        { "track_title": "Moon Trance", "artist": "Lindsey Stirling" },
+        { "track_title": "Minimal Beat", "artist": "Lindsey Stirling" },
+        { "track_title": "Transcendence", "artist": "Lindsey Stirling" },
+        { "track_title": "Elements", "artist": "Lindsey Stirling" },
+        { "track_title": "Shadows", "artist": "Lindsey Stirling" },
+        { "track_title": "Spontaneous Me", "artist": "Lindsey Stirling" },
+        { "track_title": "Anti Gravity", "artist": "Lindsey Stirling" },
+        { "track_title": "Stars Align", "artist": "Lindsey Stirling" }
+      ]
+    },
+    {
+      "album_title": "Shatter Me",
+      "date": "29/04/2014",
+      "image": "assets/images/shatterme.webp",
+      "slug": "shatter-me",
+      "tracklist": [
+        { "track_title": "Beyond the Veil", "artist": "Lindsey Stirling" },
+        { "track_title": "Mirror Haus", "artist": "Lindsey Stirling" },
+        { "track_title": "V-Pop", "artist": "Lindsey Stirling" },
+        { "track_title": "Shatter Me", "artist": "Lindsey Stirling feat. Lzzy Hale" },
+        { "track_title": "Heist", "artist": "Lindsey Stirling feat. Kill Paris" },
+        { "track_title": "Roundtable Rival", "artist": "Lindsey Stirling" },
+        { "track_title": "Night Vision", "artist": "Lindsey Stirling feat. Robert DeLong" },
+        { "track_title": "Take Flight", "artist": "Lindsey Stirling feat. SILAS" },
+        { "track_title": "Ascendance", "artist": "Lindsey Stirling" },
+        { "track_title": "We Are Giants", "artist": "Lindsey Stirling feat. Dia Frampton" },
+        { "track_title": "Swag", "artist": "Lindsey Stirling" },
+        { "track_title": "Master of Tides", "artist": "Lindsey Stirling" }
+      ]
+    },
+    {
+      "album_title": "Brave Enough",
+      "date": "19/08/2016",
+      "image": "assets/images/braveenough.webp",
+      "slug": "brave-enough",
+      "tracklist": [
+        { "track_title": "Lost Girls", "artist": "Lindsey Stirling" },
+        { "track_title": "Brave Enough", "artist": "Lindsey Stirling feat. Christina Perri" },
+        { "track_title": "The Arena", "artist": "Lindsey Stirling" },
+        { "track_title": "The Phoenix", "artist": "Lindsey Stirling" },
+        { "track_title": "Where Do We Go", "artist": "Lindsey Stirling feat. Carah Faye" },
+        { "track_title": "Those Days", "artist": "Lindsey Stirling feat. Dan + Shay" },
+        { "track_title": "Prism", "artist": "Lindsey Stirling" },
+        { "track_title": "Hold My Heart", "artist": "Lindsey Stirling feat. ZZ Ward" },
+        { "track_title": "Mirage", "artist": "Lindsey Stirling feat. Raja Kumari" },
+        { "track_title": "Don't Let This Feeling Fade", "artist": "Lindsey Stirling feat. Lecrae & Rivers Cuomo" },
+        { "track_title": "First Light", "artist": "Lindsey Stirling" },
+        { "track_title": "Love’s Just A Feeling", "artist": "Lindsey Stirling feat. RuthAnne" },
+        { "track_title": "Something Wild", "artist": "Lindsey Stirling feat. Andrew McMahon in the Wilderness" },
+        { "track_title": "Gavi's Song", "artist": "Lindsey Stirling" },
+        { "track_title": "Waltz", "artist": "Lindsey Stirling" },
+        { "track_title": "Afterglow", "artist": "Lindsey Stirling" },
+        { "track_title": "Powerlines", "artist": "Lindsey Stirling" },
+        { "track_title": "Forgotten Voyage", "artist": "Lindsey Stirling" },
+        { "track_title": "Activate", "artist": "Lindsey Stirling" }
+      ]
+    },
+    {
+      "album_title": "Warmer in the Winter",
+      "date": "20/10/2017",
+      "image": "assets/images/warmerwinter.webp",
+      "slug": "warmer-in-the-winter",
+      "tracklist": [
+        { "track_title": "Dance of the Sugar Plum Fairy", "artist": "Lindsey Stirling" },
+        { "track_title": "You’re a Mean One, Mr. Grinch", "artist": "Lindsey Stirling feat. Sabrina Carpenter" },
+        { "track_title": "Christmas C’mon", "artist": "Lindsey Stirling feat. Becky G" },
+        { "track_title": "Carol of the Bells", "artist": "Lindsey Stirling" },
+        { "track_title": "Angels We Have Heard on High", "artist": "Lindsey Stirling" },
+        { "track_title": "I Saw Three Ships", "artist": "Lindsey Stirling" },
+        { "track_title": "Let It Snow", "artist": "Lindsey Stirling" },
+        { "track_title": "Warmer in the Winter", "artist": "Lindsey Stirling feat. Trombone Shorty" },
+        { "track_title": "What Child Is This", "artist": "Lindsey Stirling" },
+        { "track_title": "All I Want for Christmas", "artist": "Lindsey Stirling" },
+        { "track_title": "Time to Fall in Love", "artist": "Lindsey Stirling feat. Alex Gaskarth" },
+        { "track_title": "Jingle Bell Rock", "artist": "Lindsey Stirling" },
+        { "track_title": "Silent Night", "artist": "Lindsey Stirling" }
+      ]
+    },
+    {
+      "album_title": "Artemis",
+      "date": "06/09/2019",
+      "image": "assets/images/artemis.webp",
+      "slug": "artemis",
+      "tracklist": [
+        { "track_title": "Underground", "artist": "Lindsey Stirling" },
+        { "track_title": "Artemis", "artist": "Lindsey Stirling" },
+        { "track_title": "Til the Light Goes Out", "artist": "Lindsey Stirling" },
+        { "track_title": "Between Twilight", "artist": "Lindsey Stirling" },
+        { "track_title": "Foreverglow", "artist": "Lindsey Stirling" },
+        { "track_title": "Love Goes On and On", "artist": "Lindsey Stirling feat. Amy Lee" },
+        { "track_title": "Masquerade", "artist": "Lindsey Stirling" },
+        { "track_title": "Sleepwalking", "artist": "Lindsey Stirling" },
+        { "track_title": "Darkside", "artist": "Lindsey Stirling" },
+        { "track_title": "The Upside", "artist": "Lindsey Stirling" },
+        { "track_title": "Guardian", "artist": "Lindsey Stirling" },
+        { "track_title": "Aurora", "artist": "Lindsey Stirling" },
+        { "track_title": "The Upside", "artist": "Lindsey Stirling feat. Elle King" },
+        { "track_title": "Embers", "artist": "Lindsey Stirling" },
+        { "track_title": "Torch Bringer", "artist": "Lindsey Stirling" }
+      ]
+    },
+    {
+      "album_title": "Snow Waltz",
+      "date": "03/12/2020",
+      "image": "assets/images/snow-waltz.webp",
+      "slug": "snow-waltz",
+      "tracklist": [
+        { "track_title": "Sleigh Ride", "artist": "Lindsey Stirling" },
+        { "track_title": "God Rest Ye Merry Gentlemen", "artist": "Lindsey Stirling" },
+        { "track_title": "Crazy For Christmas", "artist": "Lindsey Stirling feat. Bonnie McKee" },
+        { "track_title": "Feliz Navidad", "artist": "Lindsey Stirling" },
+        { "track_title": "Joy To The World", "artist": "Lindsey Stirling" },
+        { "track_title": "Snow Waltz", "artist": "Lindsey Stirling" },
+        { "track_title": "Christmas Time With You", "artist": "Lindsey Stirling feat. Frawley" },
+        { "track_title": "Little Drummer Boy", "artist": "Lindsey Stirling" },
+        { "track_title": "O Come, O Come Emmanuel", "artist": "Lindsey Stirling" },
+        { "track_title": "O Holy Night", "artist": "Lindsey Stirling" },
+        { "track_title": "Magic", "artist": "Lindsey Stirling feat. David Archuleta" },
+        { "track_title": "Deck The Halls", "artist": "Lindsey Stirling" },
+        { "track_title": "Ice Storm", "artist": "Lindsey Stirling" },
+        { "track_title": "You’re a Mean One, Mr. Grinch", "artist": "Lindsey Stirling feat. Sabrina Carpenter" },
+        { "track_title": "Manger / Noel (Medley)", "artist": "Lindsey Stirling" },
+        { "track_title": "Yuletide Regale", "artist": "Lindsey Stirling" },
+        { "track_title": "We Wish You A Merry Christmas", "artist": "Lindsey Stirling" }
+      ]
+    },
+    {
+      "album_title": "Duality",
+      "date": "14/06/2024",
+      "image": "assets/images/duality.webp",
+      "slug": "duality",
+      "tracklist": [
+        { "track_title": "Evil Twin", "artist": "Lindsey Stirling" },
+        { "track_title": "Eye Of The Untold Her", "artist": "Lindsey Stirling" },
+        { "track_title": "Surrender", "artist": "Lindsey Stirling" },
+        { "track_title": "Serenity Found", "artist": "Lindsey Stirling" },
+        { "track_title": "Untamed", "artist": "Lindsey Stirling" },
+        { "track_title": "Purpose", "artist": "Lindsey Stirling" },
+        { "track_title": "The Scarlet Queen", "artist": "Lindsey Stirling" },
+        { "track_title": "Inner Gold", "artist": "Lindsey Stirling Ft. Royal & the Serpent" },
+        { "track_title": "Survive", "artist": "Lindsey Stirling Ft. Walk off the Earth" },
+        { "track_title": "Kintsugi", "artist": "Lindsey Stirling" },
+        { "track_title": "Pulse", "artist": "Lindsey Stirling" },
+        { "track_title": "Exhale", "artist": "Lindsey Stirling" }
+      ]
+    }
+  ]
+}

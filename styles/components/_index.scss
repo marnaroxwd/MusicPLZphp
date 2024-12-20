@@ -1,0 +1,132 @@
+.title{
+  margin-top: 20px;
+    font-size: 71px;
+    text-align: center;
+    &__gradient{
+        background: linear-gradient(
+            120deg,
+            hsl(56, 89, 78, 100%),
+            hsl(40, 72, 56, 100%),
+            hsl(40, 72, 56, 100%),
+            hsl(36, 46,49, 100%),
+          );
+            background-clip: text;
+            color: transparent;
+    }
+}
+.index__body {
+  &::-webkit-scrollbar {
+    display: none; /* Cache la scrollbar dans Webkit (Chrome, Edge, Safari) */
+  }
+}
+.container__index{
+  display: flex;
+  flex-direction: column;
+}
+
+.content__left,
+.content__right {
+  flex: 1; /* Prend une largeur égale */
+}
+
+.content{
+  &__left{
+    order: 2;
+    max-width: 100%;
+    overflow: hidden;
+    &-img{
+      height: calc(-4rem + 100svh);
+      object-fit: cover; /* Optionnel : pour que l'image remplisse son conteneur */
+      transform: translateX(-50%); /* Décale l'image de 50% vers la gauche */
+      position: relative; /* Nécessaire pour que le transform fonctionne correctement */
+      left: 50%; /* Positionne l'image au centre avant le déplacement */
+      vertical-align: middle;
+    }
+  }
+  &__text{
+    margin-top: 20px;
+    &2{
+      margin-top: 8px;
+      margin-bottom: 60px;
+    }
+  }
+  &__right{
+    order: 1;
+    min-height: calc(-4rem + 100svh);
+  }
+
+}
+
+.special__title {
+  font-size: 31px; /* Définit la taille du texte */
+  margin: 0; /* Optionnel : enlève la marge par défaut */
+  margin-top: 24px;
+}
+
+
+.content__link-discover {
+  text-align: center;
+  text-decoration: none;
+  line-height: 80px;
+  color: $c-text;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  max-width: 250px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  border: 1px solid $c-text;
+  border-radius: 4px;
+  transition: color 0.5s ease;
+}
+.content__link-discover span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: $c-text;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.content__link-discover:hover {
+  color: $c-bg;
+}
+.content__link-discover:hover span {
+  width: 225%;
+  height: 562.5px;
+  background-color: $c-text;
+}
+.content__link-discover:active {
+  background-color: $c-text;
+}
+@media (min-width: 768px){
+  .title{
+    font-size: 109px
+  }
+}
+
+@media (min-width: 992px){
+
+  .container__index{
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .content{
+    &__left{
+      order: 1;
+      &-img{
+        height: 100vh;
+      }
+    }
+    &__right{
+      order: 2;
+      width: 50%;
+    }
+  }
+}

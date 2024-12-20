@@ -1,0 +1,101 @@
+  @keyframes showTopText {
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes showBottomText {
+    to {
+      transform: translateY(0);
+    }
+  }
+.animated-title {
+    display: flex;
+    flex-direction: column;
+    height: 70vmin;
+    width: 90vmin;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    font-family: $font-title;
+  }
+  .animated-title > div {
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .animated-title > div div {
+    font-size: 12vmin;
+    padding: 2vmin 0;
+    position: absolute;
+  }
+  .animated-title > div div span {
+    display: block;
+  }
+  .animated-title > div.text-top {
+    top: 0;
+  }
+  .animated-title > div.text-top div {
+    animation: showTopText 0.8s 0.3s ease forwards;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+    width: 100%;
+  }
+  .animated-title > div.text-top div span:first-child {
+    color: $c-text;
+    opacity: 0.5;
+  }
+  .animated-title > div.text-bottom {
+    bottom: 0;
+  }
+  .animated-title > div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 0.95s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+  }
+  
+  .animated-title > div div {
+    font-size: 12vmin;
+
+  }
+
+  .animated-title > div.text-bottom div {
+    width: 100%;
+      }
+
+@media (max-width: 576px) and (min-height: 700px) {
+  .title{
+    font-size: 88px;
+  }
+  .animated-title {
+    height: 90vmin;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+.animated-title > div div {
+font-size: 14vmin;
+}    
+}
+
+@media (min-width: 768px){
+  .animated-title > div div {
+    font-size: 10vmin;
+    }   
+}
+@media (min-width: 992px){
+  .animated-title{
+    height: 60vmin;
+    width: 50vmin;
+
+  }
+
+  .animated-title > div div {
+    font-size: 7vmin;
+
+  }
+
+}

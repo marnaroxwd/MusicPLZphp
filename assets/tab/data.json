@@ -1,0 +1,49 @@
+[
+    {
+      "titre": "Halo",
+      "chemin_image": "assets/images/halo.webp",
+      "lien": "https://youtu.be/jLnL63cXmD8?si=QVZNVMj1FigQukMo"
+    },
+    {
+      "titre": "Zelda",
+      "chemin_image": "assets/images/zelda.webp",
+      "lien": "https://youtu.be/b3KUyPKbR7Q?si=9L-8pGnGAo-k1ULr"
+    },
+    {
+      "titre": "Asassin's Creed 3",
+      "chemin_image": "assets/images/ac3.webp",
+      "lien": "https://youtu.be/MOg8Cz9yfWg?si=yA3IihIAGj6wyvqJ"
+    },
+    {
+      "titre": "Skyrim",
+      "chemin_image": "assets/images/skyrim.webp",
+      "lien": "https://youtu.be/BSLPH9d-jsI?si=-0uVcPZwkLjCtom-"
+    },
+    {
+      "titre": "Dragon Age Inquisition",
+      "chemin_image": "assets/images/dainquisition.webp",
+      "lien": "https://youtu.be/AuJnvC8voJY?si=Sk1Oz6ASfW_dQl0u"
+    },
+    {
+        "titre": "Game of Thrones",
+        "chemin_image": "assets/images/got.webp",
+        "lien": "https://youtu.be/_oNpmSAvpGQ?si=5g35AV8vmTkyYs9d"
+    },
+    {
+        "titre": "La Belle et la Bête",
+        "chemin_image": "assets/images/beauty.webp",
+        "lien": "https://youtu.be/X-AjhXhk19U?si=zMuPhgobq3NSqRAY"
+    },    
+    {
+        "titre": "My Immortal - Evanescence",
+        "chemin_image": "assets/images/myimmortal.webp",
+        "lien": "https://youtu.be/-onQcF95pfs?si=T7ivQRleCmhSk4y-"
+    },
+    {
+        "titre": "Seigneur des anneaux",
+        "chemin_image": "assets/images/lotr.webp",
+        "lien": "https://youtu.be/dQiNVk_u0po?si=R6Cc8vEcbXnb4gHH"
+    }
+ 
+  ]
+  

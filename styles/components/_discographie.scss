@@ -1,0 +1,310 @@
+.title{
+  &__discographie {
+    position: absolute;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 71px; 
+  }
+}
+
+
+.container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  height: 100vh;
+}
+
+.swiper-container {
+  display: flex;
+  width: 100%;
+  height: 180px;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: $c-text;
+  height: 180px;
+  display: flex !important;
+  justify-content: flex-end;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  width: 360px !important;
+  margin: 0;
+  border: 3px solid $c-text;
+  position: relative;
+  &:hover{
+    cursor: grab;
+  }
+  &:active{
+    cursor: grabbing;
+  }
+  &-active {
+    width: 360px !important;
+    border: 3px solid transparent; /* Définit la largeur de la bordure */
+    border-image: linear-gradient(
+      120deg,
+      hsl(56, 89%, 78%),
+      hsl(40, 72%, 56%),
+      hsl(40, 72%, 56%),
+      hsl(36, 46%, 49%)
+    ) 1; /* Applique le dégradé comme bordure */
+  }
+  &.swiper-slide-active .well:nth-child(1) {
+    background-size: 180px;
+    background-repeat: no-repeat;
+    opacity: 0;
+  }
+  &-1 {
+    background: linear-gradient(180deg, #C16F48, #778355);
+    &.swiper-slide-active .well:nth-child(1) {
+      background-image: url("../assets/images/LSAlbum.webp");
+
+    }
+  }
+
+  &-2 {
+    background: linear-gradient(180deg, #424249, #11131B);
+    &.swiper-slide-active .well:nth-child(1) {
+      background-image: url("../assets/images/shatterme.webp");
+
+    }
+  }
+
+  &-3 {
+    background: linear-gradient(180deg, #643D3C, #24181C);
+    &.swiper-slide-active .well:nth-child(1) {
+      background-image: url("../assets/images/braveenough.webp");
+
+    }
+  }
+
+  &-4 {
+    background: linear-gradient(180deg, #DAD8D9, #F3CCBA);
+    &.swiper-slide-active .well:nth-child(1) {
+      background-image: url("../assets/images/warmerwinter.webp");
+
+    }
+  }
+
+  &-5 {
+    background: linear-gradient(180deg, #1D1C1D, #8B2C47);
+    &.swiper-slide-active .well:nth-child(1) {
+      background-image: url("../assets/images/artemis.webp");
+
+    }
+  }
+
+  &-6 {
+    background: linear-gradient(180deg, #89ABC4, #375B78);
+    &.swiper-slide-active .well:nth-child(1) {
+      background-image: url("../assets/images/snow-waltz.webp");
+
+    }
+  }
+
+  &-7 {
+    background: linear-gradient(180deg, #F0DBCA, #FC9087);
+    &.swiper-slide-active .well:nth-child(1) {
+      background-image: url("../assets/images/duality.webp");
+    }
+  }
+}
+
+.well {
+  height: 100%;
+  width: 180px;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  &__link {
+    text-align: center;
+    text-decoration: none;
+    color: $c-bg;
+    position: absolute;
+    overflow: hidden;
+    padding: 4px 12px 4px 14px;
+    font-size: 13px;
+    top: 5%;
+    margin-left: 8px;
+    border: 1px solid $c-bg;
+    border-radius: 4px;
+    transition: color 0.3s ease;
+    & span {
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background-color: $c-bg;
+      transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+    &:hover {
+      color: $c-text;
+    }
+    &:hover span {
+      width: 225%;
+      height: 562.5px;
+      background-color: $c-bg;
+    }
+    &:active {
+      background-color:$c-bg;
+    }
+    &--reverse{
+      color: $c-text;
+      border-color: $c-text;
+      & span{
+        background-color: $c-text;
+      }
+      &:hover{
+        color: $c-bg;
+      }
+      &:hover span{
+        background-color: $c-text;
+      }
+      &:active{
+        background-color: $c-text;
+      }
+    }
+  }
+}
+
+.album{
+  &__title {
+    font-size: 31px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8px;
+  }
+  &__date {
+    margin-top: 4px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: unset !important;
+  color: $c-text!important;
+}
+
+.swiper-button-prev {
+  bottom: 20% !important;
+  margin-left: 10%;
+}
+
+.swiper-button-next {
+  bottom: 20% !important;
+  margin-right: 10%;
+}
+
+
+
+.swiper-slide-active .well:nth-child(1) {
+  animation: slideInWithBackground 0.7s 0.2s ease forwards; /* Animation avec translation et opacité */
+}
+
+@keyframes slideInWithBackground {
+  0% {
+    background-position: 400px 50%; /* Fond initialement à droite */
+    opacity: 0;
+  }
+  100% {
+    background-position: 0px 50%; /* Fond déplacé vers la gauche */
+    opacity: 1;
+  }
+ }
+@media(min-width: 768px){
+  .swiper-container {
+    height: 300px;
+  }
+  .swiper-slide{
+    height: 300px;
+    width: 600px !important;
+    &.swiper-slide-active .well:nth-child(1) {
+      background-size: 300px;
+    }
+  }
+  .well{
+    width: 300px;
+    &__link{
+      font-size: 20px;
+      padding: 8px 16px 8px 18px;
+    }
+  }
+  .album{
+    &__title {
+      font-size: 71px;
+    }
+    &__date {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+}
+ @media (min-width: 992px){
+  .swiper-container {
+    height: 400px;
+  }
+  .swiper-slide{
+    height: 200px;
+    width: 800px !important;
+    &.swiper-slide-active .well:nth-child(1) {
+      background-size: 400px;
+    }
+  }
+  .well{
+    width: 400px;
+    &__link{
+      font-size: 20px;
+      padding: 9px 19px 9px 21px;
+    }
+  }
+  .title{
+    &__discographie {
+      font-size: 109px; 
+    }
+  }
+  .album{
+    &__title {
+      font-size: 88px;
+    }
+    &__date {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+
+.swiper-button-next,
+.swiper-button-prev {
+  bottom: 80% !important;
+}
+
+.swiper-button-prev {
+  bottom: 15% !important;
+  margin-left: 30%;
+}
+
+.swiper-button-next {
+  bottom: 15% !important;
+  margin-right: 30%;
+}
+}

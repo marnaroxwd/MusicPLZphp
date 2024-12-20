@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Compacta';
+  src: url('../assets/fonts/CompactaBT-Light.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Century Gothic';
+  
+  src: url('../assets/fonts/CenturyGothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body {
+
+  font-family: $font-body;
+  font-size: $size-text;
+  line-height: 1.5;
+  color: $c-text;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.body__anim{
+  background: linear-gradient(-45deg, #0d0d0d, #222322, #353535, #3d3d3d);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+}
+h1, h2, h3{
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: $font-title;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+button{
+  background-color: transparent;
+  border: none;
+  &:hover{
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,191 @@
+.cover{
+    max-width: 160px;
+    border-radius: 8px;
+    &__container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 28px;
+    }
+}
+
+.music__title {
+  font-family: $font-title;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 38px;
+  opacity: 1;
+  margin-left: 12px;
+}
+
+.music__title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.music__title.show span {
+  animation: appear 0.5s forwards;
+}
+
+
+.artist{
+  font-family: $font-body;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  margin-left: 12px;
+}
+.artist span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.artist.show span {
+  animation: appearX 0.5s forwards;
+}
+/* Animation pour l'apparition des lettres */
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appearX {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.buttons{
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.retour__btn{
+  display: inline-block;
+  width: 40px;
+  background-image: url('../assets/images/downretour.svg');
+  background-size: contain  ;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -100vw; /* Cache le texte */
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+.prev{
+    display: inline-block;
+    width: 21px;
+    height: 17px;
+    background-image: url('../assets/images/previous_music.svg');
+    background-size: cover  ;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -1000vw; /* Cache le texte */
+    margin-left: 12px;
+}
+.next{
+  display: inline-block;
+  width: 21px;
+  height: 17px;
+  background-image: url('../assets/images/next_music.svg');
+  background-size: cover  ;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -1000vw; /* Cache le texte */
+  margin-right: 12px;
+}
+.play{
+  display: inline-block;
+  width: 24px;
+  height: 100%;
+  background-image: url('../assets/images/play.svg');
+  background-size: contain  ;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -1000vw; /* Cache le texte */
+}
+
+.retour__btn{
+  color: white;
+}
+.progress-bar {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  height: 10px;
+  background: $c-text;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  box-shadow: inset 0 0 2px $c-bg;
+}
+
+.progress {
+  width: 50%;
+  height: 100%;
+  background: #0d0d0d;
+  transition: width 0.2s ease;
+}
+
+.box {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  width: 100%;
+  max-height: 160px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Position relative pour positionner la bordure fixe */
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 100%;
+  user-select: none;
+  position: relative; /* Pour que la bordure ne soit pas affectée par le translate de l'élément */
+  transition: transform 0.3s ease; /* Transition pour le déplacement */
+}
+
+.item--active {
+  opacity: 1; /* Opacité de l'élément actif */
+  z-index: 1; /* Pour s'assurer qu'il est au-dessus des autres éléments */
+}
+
+.item--active::before {
+  content: ''; /* Crée un pseudo-élément pour la bordure */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  border-top: 2px solid $c-text; /* Bordure fixe */
+  border-bottom: 2px solid $c-text; /* Bordure fixe */
+  pointer-events: none; /* Assure que le pseudo-élément ne gêne pas l'interaction avec l'élément */
+}
+
+.item--sibling,
+.item--following {
+  transition: opacity 0.3s ease; /* Transition uniquement sur l'opacité */
+}
+
+.item--sibling {
+  opacity: 0.5;
+  font-size: 0.9em;
+}
+
+.item--following {
+  opacity: 0.25;
+  font-size: 0.85em;
+}
