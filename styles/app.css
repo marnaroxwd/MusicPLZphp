@@ -887,7 +887,7 @@ button:hover {
     font-size: 25px;
   }
   .ow_hidden {
-    overflow-y: hidden;
+    overflow: hidden;
   }
 }
 @media (min-width: 992px) {
@@ -1035,7 +1035,7 @@ button:hover {
 }
 
 .progress {
-  width: 50%;
+  width: 0px;
   height: 100%;
   background: #0d0d0d;
   transition: width 0.2s ease;
@@ -1096,6 +1096,31 @@ button:hover {
 .item--following {
   opacity: 0.25;
   font-size: 0.85em;
+}
+
+.box {
+  display: flex;
+  justify-content: center; /* Centrer les éléments horizontalement */
+  align-items: center; /* Centrer les éléments verticalement */
+  overflow: hidden; /* Cache tout débordement */
+  transition: transform 0.3s ease; /* Ajout d'une transition pour les mouvements fluides */
+}
+
+.item {
+  flex: 0 0 auto; /* Empêche les éléments de se redimensionner */
+  transition: transform 0.3s ease; /* Transition fluide lors du mouvement */
+}
+
+.item--active {
+  transform: scale(1.1); /* Agrandir l'élément actif pour le mettre en valeur */
+}
+
+.item--sibling {
+  transform: scale(0.95); /* Réduire légèrement les éléments voisins */
+}
+
+.item--following {
+  transform: scale(0.9); /* Réduire encore plus les éléments plus éloignés */
 }
 
 .transition::before {

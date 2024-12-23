@@ -4,9 +4,10 @@ $pageTitle = $pageTitle ?? "MusicPLZ";
 $metaDescription = $metaDescription ?? "Découvrez les albums et reprises de Lindsey Stirling.";
 $metaKeywords = $metaKeywords ?? "Lindsey Stirling, musique, albums, reprises";
 $metaLanguage = $metaLanguage ?? "fr";
+$pageSpecificClass = basename($_SERVER['PHP_SELF'], '.php') === 'reprises' ? 'ow_hidden' : '';
 ?>
 <!DOCTYPE html>
-<html lang="<?= htmlspecialchars($metaLanguage, ENT_QUOTES, 'UTF-8'); ?>">
+<html lang="fr" class="<?= htmlspecialchars($pageSpecificClass) ?>">
 <head>
   <!-- Métadonnées générales -->
   <meta charset="UTF-8">
@@ -30,7 +31,7 @@ $metaLanguage = $metaLanguage ?? "fr";
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/app.css">
-  
+  <link rel="preload" href="assets/images/signature_jaune.svg" as="image">
   <script src="scripts/app.js" defer></script>
   <?php if (isset($includeSwiper) && $includeSwiper): ?>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
